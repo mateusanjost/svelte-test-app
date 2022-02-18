@@ -1,7 +1,5 @@
-
 <script lang="ts">
-import Teste from './components/Teste.svelte';
-import Time from './components/Time.svelte';
+  import Time from "./components/Time.svelte";
   export let headerText: string;
   export let age: number;
   export let isMale: boolean;
@@ -11,13 +9,12 @@ import Time from './components/Time.svelte';
 </script>
 
 <main>
-	
   <h1>{headerText}!</h1>
   <p>You are {age} years old.</p>
   <button on:click={toggle}> Toggle text </button>
   <p>You are {isMale ? "teste" : "teste2"}.</p>
   <p>
-	<Time />
+    <Time />
     Visit the <a href="https://svelte.dev/tutorial">Svelte tutorial</a> to learn
     how to build Svelte apps.
   </p>
